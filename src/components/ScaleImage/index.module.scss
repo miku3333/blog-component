@@ -1,0 +1,13 @@
+$scale: var(--scale);
+$time: var(--time);
+.img {
+    overflow: hidden;
+    img {
+        transition-duration: $time;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            transform: scale($scale);
+        }
+    }
+}

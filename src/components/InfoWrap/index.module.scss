@@ -1,0 +1,50 @@
+.wrap {
+    position: relative;
+    background: var(--bg-color);
+    padding-top: 20px;
+    text-align:center;
+    .avatar {
+        margin: 0 auto 20px;
+        border-radius: 50%;
+    }
+    .name {
+        margin: 0 auto 20px;
+        color: #cccccc;
+        text-align: center;
+    }
+    .profile {
+        margin: 0 auto 20px;
+        color: #999999;
+        text-align: center;
+    }
+    .tagList {
+        display: inline-block;
+        margin: 0 auto 20px;
+        color: #cccccc;
+        >div {
+            display: inline-block;
+            padding: 0 10px;
+            &:hover {
+                color: #1890FF;
+            }
+        }
+        >div + div {
+            border-left: 1px solid #cccccc;
+        }
+    }
+    .otherAccount {
+        padding: 0 20px;
+        // font-size: 14px;
+        text-align: left;
+        .accountItem {
+            text-align: center;
+            display: inline-block;
+            width: 50%;
+            color: #eeeeee;
+            &:hover {
+                border-radius: 4px;
+                background-color: #282828;
+            }
+        }
+    }
+}

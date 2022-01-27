@@ -1,0 +1,23 @@
+.title {
+    
+}
+.wrap {
+    div + div {
+        border-left: 1px solid #f0f0f0;
+    }
+    div:nth-child(1) {
+        padding-left: 0;
+    }
+    div:nth-last-child {
+        padding-right: 0;
+    }
+}
+.item {
+    text-align: center;
+    vertical-align: middle;
+    flex: 1;
+    padding: 0 16px;
+    &:hover {
+        color: #1890FF;
+    }
+}

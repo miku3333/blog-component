@@ -1,0 +1,16 @@
+$rotateHover: var(--rotateHover);
+.wrap {
+    position: relative;
+    transform-style: preserve-3d;
+    .mainChild,
+    .subChild {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    &:hover {
+        transform: $rotateHover
+    }
+}

@@ -1,0 +1,78 @@
+.item {
+    position: relative;
+    border-bottom: 0 !important;
+    .inner {
+        position: absolute;
+        width: calc(100% - 24px);
+        height: calc(100% - 24px);
+        top: 12px;
+        left: 12px;
+        background-color: #F5F5F5;
+        .img {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            height: calc(100% - 24px) !important;
+            transform: translateY(-50%);
+            border-radius: 5px;
+            overflow: hidden;
+            .mainTag {
+                position: absolute;
+                // top: 10px;
+                // left: 10px;
+                background: rgba(0,0,0,0.5);
+                z-index: 9;
+                color: #ffffff;
+                padding: 3px 8px;
+                border-radius: 3px;
+                // &:hover {
+                //     color: #1890FF;
+                // }
+            }
+        }
+        .wrap {
+            position: absolute;
+            top: 12px;
+            height: calc(100% - 24px);
+            > div {
+                position: absolute;
+            }
+            .title {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 24px;
+                &:hover {
+                    color: #1890FF;
+                }
+            }
+            .divider {
+                top: 8px;
+            }
+            .description {
+                top: 40px;
+                display: -webkit-box;    
+                -webkit-box-orient: vertical;    
+                overflow: hidden;
+                line-height: 1.5;
+            }
+            .infoWrap {
+                bottom: 0;
+                height: 16px;
+                font-size: 16px;
+                line-height: 16px;
+                > span {
+                    float: left;
+                }
+                span + span {
+                    margin-left: 20px;
+                }
+            }
+            .button {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            
+        }
+    }
+}

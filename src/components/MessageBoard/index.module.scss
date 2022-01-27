@@ -1,0 +1,38 @@
+$scale: var(--scale);
+.each {
+    position: relative;
+    border-bottom: 0 !important;
+    display: flex;
+    .item {
+        // flex: 1;
+        transition-duration: 0.2s;
+        box-shadow: rgba(0, 0, 0, 0.1) 3px 5px 5px;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.5) 3px 5px 5px;
+            transform: rotate(0) scale($scale) !important;
+        }
+        .time {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #999;
+        }
+        .text {
+            position: absolute;
+            top: 36px;
+            left: 10px;
+            display: -webkit-box;    
+            -webkit-box-orient: vertical;    
+            overflow: hidden;
+            line-height: 30px;
+        }
+        .icon {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 64px;
+            height: 64px;
+            background: url(../../assets/MessageBoardIcon.png) no-repeat center / contain;
+        }
+    }
+}

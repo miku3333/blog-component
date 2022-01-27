@@ -1,0 +1,19 @@
+$hover: var(--hover);
+.item {
+    flex: 1;
+    &:hover {
+        background-color: $hover !important;
+        color: #ffffff !important;
+    }
+}
+.empty {
+    flex: 1;
+}
+.end {
+    width: 100%;
+}
+.button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
