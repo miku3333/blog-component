@@ -1,6 +1,6 @@
 {
     "name": "blog-component",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": false,
     "description": "一款方便使用的个人博客组件库",
     "main": "dist/index.js",
