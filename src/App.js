@@ -38,7 +38,6 @@ function App () {
     ]
     return (
         <div>
-            <div>1111</div>
             {/* <CommonHeader config={{ api: '/api/commonHeader', userProcess: (data) => data.list }}></CommonHeader> */}
             {/* <RankingList config={{ api: '/api/articleList', userProcess: (data) => data.list }}></RankingList> */}
             {/* <RankingList initData={data}></RankingList> */}
@@ -48,11 +47,11 @@ function App () {
             </ScaleImage> */}
             {/* <MessageBoard config={{ api: '/api/articleList', userProcess: data => data.list }}></MessageBoard> */}
             {/* <MessageBoard initData={data}></MessageBoard> */}
-            {/* <TimeLine config={{ api: "/api/articleList", userProcess: data => data.list }}></TimeLine> */}
-            {/* <Carousel config={{ api: "/api/articleList" }}></Carousel> */}
+            <TimeLine config={{ api: "/api/articleList", userProcess: data => data.list }}></TimeLine>
+            {/* <Carousel config={{ api: "/api/articleList", userProcess: data => data.list }}></Carousel> */}
             {/* <TagList config={{ api: "/api/articleList", userProcess: data => data.list }}></TagList> */}
             {/* <BackTop></BackTop> */}
-            <CursorEffect></CursorEffect>
+            {/* <CursorEffect></CursorEffect> */}
             {/* <Live2D width={300} height={500} ModelList={['chuixue_3']}></Live2D> */}
             {/* <Layout>
                 <div width="20">test1</div>
@@ -81,7 +80,16 @@ function App () {
             </Flip> */}
             {/* <InfoWrap config={{ api: "/api/userInfo" }}></InfoWrap> */}
             {/* <InfoWrap initData={data}></InfoWrap>; */}
-            {/* <Gitalk></Gitalk> */}
+            {/* <Gitalk
+                options={{
+                clientID: '739e7694f0010709d990', // GitHub Application Client ID
+                clientSecret: 'd57f65922295a2045fd65e59f7a32a855ac1f0a0', // GitHub Application Client Secret
+                repo: 'talk',      // 存放评论的仓库
+                owner: 'miku3333',          // 仓库的创建者，
+                admin: ['miku3333'],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+                }}
+            >
+            </Gitalk> */}
             {/* <Calendar monthConfig={{ api: '/api/calendar/month', userProcess: data => data.days }} ></Calendar> */}
             {/* <File config={{ api: "/api/articleList", userProcess: data=>data.list }}></File> */}
             {/* <File initData={data}></File>; */}

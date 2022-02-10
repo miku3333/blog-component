@@ -73,7 +73,7 @@ export default function TagList (props) {
     return (
         <div style={{ width, position: 'relative' }}>
             {title && <div style={titleStyle}>{title}</div>}
-            {rightButton.text && <Button type="primary" className={styles.button} onClick={goPage(rightButton.url)}>{rightButton.text}</Button>}
+            {rightButton?.text && <Button type="primary" className={styles.button} onClick={goPage(rightButton.url)}>{rightButton.text}</Button>}
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {renderList(data)}
             </div>
